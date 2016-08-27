@@ -12,4 +12,4 @@ RUN curl -s -S -f -o /etc/apt/sources.list.d/stackdriver.list "https://repo.stac
 
 # Install the agent package, without prompting for an API key.
 ENTRYPOINT ["apt-get"]
-CMD ["install", "-y", "-q", "install", "stackdriver-agent"]
+CMD ["-y", "-q", "install", "stackdriver-agent"]
